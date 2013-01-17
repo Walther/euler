@@ -1,0 +1,1 @@
+sumMultiples a b c = sum [x | x <- [(min a b)..(c-1)], (x `mod` a == 0) || (x `mod` b == 0)]
