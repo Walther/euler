@@ -3,6 +3,6 @@
 
 gridRoutes :: Integer -> Integer
 gridRoutes n = facto (2*n) `div` (facto n)^2
-	where
-		facto 1 = 1
-		facto n = n * facto (n-1)
+    where
+        facto 1 = 1
+        facto n = n * facto (n-1)
