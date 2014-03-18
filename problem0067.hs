@@ -9,7 +9,7 @@ adder = zipWith (+)
 
 count :: Integral a => [[a]] -> a
 count (x:[]) = head x
-count xs = count $ init (init xs) ++ [adder (last (init xs)) (maxZip (last xs))]
+count xs = count $ init (init xs) ++ [adder (last (init xs)) (maxZip (last xs))]
 
 
 readInt = read :: String -> Int
