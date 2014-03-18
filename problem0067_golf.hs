@@ -1,5 +1,5 @@
 r=read::String->Int
-main=do
+d=do
  c<-readFile"tree.txt"
  let a=n$m(m r)$m words$filter(notElem '#')$lines c
  print a
