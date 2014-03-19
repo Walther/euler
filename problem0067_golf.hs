@@ -1,3 +1,6 @@
+-- Golfed solution for Euler #67 in Haskell.
+-- Pipe the triangle/tree file from stdin, prints result.
+-- 8 lines, 177 chars without comments.
 main=do
  c<-getContents
  let a=n$m(m read.words)$filter(notElem '#')$lines c ::Int
