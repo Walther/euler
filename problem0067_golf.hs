@@ -1,7 +1,6 @@
-r=read::String->Int
 main=do
  c<-getContents
- let a=n$m(m r.words)$filter(notElem '#')$lines c
+ let a=n$m(m read.words)$filter(notElem '#')$lines c ::Int
  print a
 z=zipWith
 m=map
