@@ -1,6 +1,6 @@
 r=read::String->Int
-d=do
- c<-readFile"tree.txt"
+main=do
+ c<-getContents
  let a=n$m(m r)$m words$filter(notElem '#')$lines c
  print a
 z=zipWith
