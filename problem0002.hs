@@ -1,10 +1,9 @@
--- fibs is the infinite list of Fibonacci's numbers.
--- foldl1' is something I need to look at more; I have no real idea what it does,
--- just recommended at #haskell.
-
--- Solves the Euler #2
-
+-- By considering the terms in the Fibonacci sequence whose values do not exceed
+-- four million, find the sum of the even-valued terms.
 import Data.List
 
+main = do
+  print $ sumEvenFibsNotOver 4000000
+
 fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
-sumEvenFibsNotOver n = foldl1' (+) . takeWhile (<=n) . filter even $ fibs
+sumEvenFibsNotOver n = sum . takeWhile (<=n) . filter even $ fibs
