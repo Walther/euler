@@ -1,7 +1,8 @@
--- powerdigitsum takes two arguments - base and power - and returns the sum of digits
--- in the result number base^power. Solution to Euler #16.
+-- What is the sum of the digits of the number 2^1000?
+main = do
+  print $ powerdigitsum 2 1000
 
 powerdigitsum n m = sumOfDigits (n^m)
-    where 
+    where
         sumOfDigits 0 = 0
         sumOfDigits x = (x `mod` 10) + sumOfDigits (x `div` 10)
